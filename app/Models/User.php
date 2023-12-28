@@ -23,6 +23,19 @@ class User extends Authenticatable
         'password',
     ];
 
+    function posts(){
+        return $this->hasMany(Post::class);
+    }
+
+    function roles(){
+        return $this->belongsToMany(Role::class);
+    }
+
+    public function hasRole($roleName)
+    {
+        return $this->roles->contains('name', $roleName);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *

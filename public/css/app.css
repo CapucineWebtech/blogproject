@@ -1,0 +1,31 @@
+.blog-btn {
+    padding: 0 !important;
+    font-weight: bold !important;
+    border-radius: 100% !important;
+    width: 115px !important;
+    height: 70px !important;
+    display: flex !important;
+    place-items: center !important;
+    justify-content: center !important;
+}
+
+.blog-btn-right {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.blog-btn-left {
+    position: fixed;
+    bottom: 20px;
+    right: 155px;
+}
+
+.product-card:hover {
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ background-color: #f8f9fa;
+}
+
+.ck-editor__editable[role="textbox"] {
+    min-height: 200px;
+}
