@@ -13,31 +13,39 @@ Avant de commencer, assurez-vous d'avoir installé les éléments suivants sur v
 
 1. Clonez le dépôt :
 
-   ```bash
-   git clone https://github.com/CapucineWebtech/blogproject.git
+```bash
+git clone https://github.com/CapucineWebtech/blogproject.git
+```
    
 2. Accédez au répertoire du projet :
 
-    ```bash
-    cd BlogProject
-    ```
+```bash
+cd blogproject
+```
 
 3. Installez les dépendances PHP avec Composer :
 
-    ```bash
-    composer install
-    ```
+```bash
+composer install
+```
 4. Copiez le fichier .env.example en le renomment .env
 
 Une fois le .env en place, modifiez-le avec les informations de connexion à votre base de données.
 
+## Configuration
+
+1. Générez la clé d'application Laravel :
+ ```bash
+php artisan key:generate
+ ```
+
+2. Créez la base de données :
+ ```bash
+php artisan migrate
+ ```
 ## Lancement
 
-1. Créez la base de données :
- ```bash
-  php artisan migrate
- ```
-2. Démarrez le serveur Laravel :
+1. Démarrez le serveur Laravel :
 ```bash
 php artisan serve
  ```
